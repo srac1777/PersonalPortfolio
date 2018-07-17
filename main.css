@@ -1,3 +1,9 @@
+/* @font-face {
+    font-family: Butler;
+    src: url(./assets/fonts/Butler/Butler_Light.otf) format("opentype");
+} */
+
+
 #wrapper {
     background: green;
     width: 100vw;
@@ -13,14 +19,15 @@
     height: 70vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     border: 1px solid black;
 }
 
 .name-pic {
     background: blue;
-    padding: 20px;
-    width: 80%;
+    /* padding: 20px; */
+    margin: 20px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,7 +35,7 @@
 }
 
 .profile-picture {
-    background-image: url(./assets/SideA-3\ copy.jpg);
+    background-image: url(./assets/images/SideA-3\ copy.jpg);
     width: 200px;
     height: 200px;
     min-width: 200px;
@@ -41,5 +48,86 @@
 .name {
     font-size: 40px;
     background: pink;
+    font-family: 'EB Garamond', serif;
     
+}
+
+.name-caption {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;    
+}
+
+.projects-full {
+    background: gold;
+    margin: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.audify a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.audify-logo {
+    background-image: url(./assets/images/audify-gray.png);
+
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    transition: 0.3s;
+    
+}
+
+.audify a:hover .audify-logo {
+        background-image: url(./assets/images/audify-green.png);
+        transition: 0.3s;
+
+}
+
+.audify a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.audify-logo {
+    background-image: url(./assets/images/audify-gray.png);
+
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    transition: 0.3s;
+    
+}
+
+.audify a:hover .audify-logo {
+        background-image: url(./assets/images/audify-green.png);
+        transition: 0.3s;
+
+}
+
+.audify a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.audify-logo {
+    background-image: url(./assets/images/audify-gray.png);
+
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    transition: 0.3s;
+    
+}
+
+.audify a:hover .audify-logo {
+        background-image: url(./assets/images/audify-green.png);
+        transition: 0.3s;
+
 }
