@@ -5,7 +5,7 @@
 
 
 #wrapper {
-    background: green;
+    /* background: green; */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -14,56 +14,88 @@
 }
 
 .card-full {
-    background: red;
+    /* background: red; */
     width: 70vw;
-    height: 70vh;
+    height: 75vh;
+    min-width: 500px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    border: 1px solid black;
+    align-items: center;
+    /* border: 1px solid black; */
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 0px 165px -26px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 165px -26px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 165px -26px rgba(0,0,0,0.75);
 }
 
 .name-pic {
-    background: blue;
+    /* background: blue; */
     /* padding: 20px; */
     margin: 20px;
-    width: 90%;
+    width: 80%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
     align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .profile-picture {
     background-image: url(./assets/images/SideA-3\ copy.jpg);
     width: 200px;
     height: 200px;
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 150px;
+    min-height: 150px;
     border-radius: 50%;
     background-size: 100%;
     background-repeat: no-repeat;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+
+   -webkit-box-shadow: 0px 1px 100px -13px rgba(0,0,0,1);
+-moz-box-shadow: 0px 1px 100px -13px rgba(0,0,0,1);
+box-shadow: 0px 1px 100px -13px rgba(0,0,0,1);
 }
 
 .name {
     font-size: 40px;
-    background: pink;
+    /* background: pink; */
     font-family: 'EB Garamond', serif;
+    /* margin-left: 40px; */
+    margin-top: 20px;
     
 }
 
 .name-caption {
     font-family: 'EB Garamond', serif;
-    font-size: 20px;    
+    font-size: 20px; 
+    /* margin-left: 40px; */
+    text-align: center;
+
+}
+
+.proj-title {
+    font-size: 27px;
+    font-family: 'EB Garamond', serif;
+    margin-left: 60px; 
+    text-align: center;
 }
 
 .projects-full {
-    background: gold;
-    margin: 20px;
-    width: 90%;
+    /* background: gold; */
+    /* margin: 20px 20px 20px 20px; */
+    width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    font-family: 'EB Garamond', serif;
+    min-height: 150px;
+}
+
+.audify {
+    width: 33%;
 }
 
 .audify a {
@@ -74,10 +106,12 @@
 
 .audify-logo {
     background-image: url(./assets/images/audify-gray.png);
-
+    background-repeat: no-repeat;
+    background-position-x: 12px;
+    background-position-y: 12px;
     width: 100px;
     height: 100px;
-    background-size: 100%;
+    background-size: 80%;
     transition: 0.3s;
     
 }
@@ -88,36 +122,64 @@
 
 }
 
-.audify a {
+.audify-title {
+    font-size: 22px;
+}
+
+.audify-description {
+    width: 80%;
+    text-align: center;
+}
+
+.dispersion {
+    width: 33%;
+}
+
+.dispersion a {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.audify-logo {
-    background-image: url(./assets/images/audify-gray.png);
-
+.dispersion-logo {
+    background-image: url(./assets/images/dispersion-gray.png);
+    background-repeat: no-repeat;
+    background-position-x: 12px;
+    background-position-y: 12px;
     width: 100px;
     height: 100px;
-    background-size: 100%;
+    background-size: 80%;
     transition: 0.3s;
     
 }
 
-.audify a:hover .audify-logo {
-        background-image: url(./assets/images/audify-green.png);
+.dispersion a:hover .dispersion-logo {
+        background-image: url(./assets/images/dispersion.png);
         transition: 0.3s;
 
 }
 
-.audify a {
+.dispersion-title {
+    font-size: 22px;
+}
+
+.dispersion-description {
+    width: 80%;
+    text-align: center;
+}
+
+.codeup {
+    width: 33%;
+}
+
+.codeup a {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.audify-logo {
-    background-image: url(./assets/images/audify-gray.png);
+.codeup-logo {
+    background-image: url(./assets/images/codeup-gray.png);
 
     width: 100px;
     height: 100px;
@@ -126,8 +188,77 @@
     
 }
 
-.audify a:hover .audify-logo {
-        background-image: url(./assets/images/audify-green.png);
+.codeup a:hover .codeup-logo {
+        background-image: url(./assets/images/codeup.png);
         transition: 0.3s;
+
+}
+
+.codeup-title {
+    font-size: 22px;
+}
+
+.codeup-description {
+    width: 80%;
+    text-align: center;
+}
+
+.links {
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-top: 50px; */
+    
+    margin-bottom: 10px;
+
+}
+
+.empty {
+    height: 20px;
+}
+
+.github {
+    background-image: url(./assets/images/github-gray.png);
+    background-size: 100%;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+.github:hover {
+    background-image: url(./assets/images/github.png);
+    transition: 0.3s;
+
+}
+
+.linkedin {
+    background-image: url(./assets/images/linkedin-gray.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+
+}
+
+.linkedin:hover {
+    background-image: url(./assets/images/linkedin.png);
+    transition: 0.3s;
+
+}
+
+.mailto {
+    background-image: url(./assets/images/gmail-gray.png);
+    background-size: 100%;
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+
+}
+.mailto:hover {
+    background-image: url(./assets/images/gmail.png);
+    transition: 0.3s;
 
 }
