@@ -3,7 +3,7 @@
     src: url(./assets/fonts/Butler/Butler_Light.otf) format("opentype");
 } */
 
-
+@media only screen and (min-width: 800px) {
 #wrapper {
     /* background: green; */
     width: 100vw;
@@ -286,6 +286,7 @@ box-shadow: 0px 1px 100px -13px rgba(0,0,0,1);
     background-image: url(./assets/images/resume.png);
     transition: 0.3s;
 
+}
 }
 
 @media only screen and (max-width: 800px) {
