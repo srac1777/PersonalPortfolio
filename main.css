@@ -76,22 +76,23 @@ box-shadow: 0px 1px 100px -13px rgba(0,0,0,1);
 
 }
 
-.proj-title {
+/* .proj-title {
     font-size: 27px;
     font-family: 'EB Garamond', serif;
     margin-left: 60px; 
     text-align: center;
-}
+} */
 
 .projects-full {
     /* background: gold; */
     /* margin: 20px 20px 20px 20px; */
+    
     width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-family: 'EB Garamond', serif;
-    min-height: 150px;
+    min-height: 50px;
 }
 
 .audify {
@@ -284,4 +285,295 @@ box-shadow: 0px 1px 100px -13px rgba(0,0,0,1);
     background-image: url(./assets/images/resume.png);
     transition: 0.3s;
 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+                #wrapper {
+            /* background: green; */
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-full {
+            /* background: red; */
+            width: 100vw;
+            height: 100vh;
+            /* min-width: 500px; */
+            /* min-height: 500px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 1px solid black; */
+            /* border-radius: 40px; */
+            /* -webkit-box-shadow: 0px 0px 165px -26px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 165px -26px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 165px -26px rgba(0,0,0,0.75); */
+        }
+
+        .name-pic {
+            /* background: blue; */
+            /* padding: 20px; */
+            margin: 20px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-evenly; */
+            align-items: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        .profile-picture {
+            background-image: url(./assets/images/SideA-3\ copy.jpg);
+            width: 200px;
+            height: 200px;
+            /* min-width: 150px;
+            min-height: 150px; */
+            border-radius: 50%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            
+            /* margin-left: 20px; */
+
+        -webkit-box-shadow: 0px 1px 100px -13px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 1px 100px -13px rgba(0,0,0,1);
+        box-shadow: 0px 1px 100px -13px rgba(0,0,0,1);
+        }
+
+        .name {
+            font-size: 40px;
+            /* background: pink; */
+            font-family: 'EB Garamond', serif;
+            /* margin-left: 40px; */
+            margin-top: 20px;
+            
+        }
+
+        .name-caption {
+            font-family: 'EB Garamond', serif;
+            font-size: 20px; 
+            /* margin-left: 40px; */
+            text-align: center;
+
+        }
+
+        /* .proj-title {
+            font-size: 27px;
+            font-family: 'EB Garamond', serif;
+            margin-left: 60px; 
+            text-align: center;
+        } */
+
+        .projects-full {
+            /* background: gold; */
+            /* margin: 20px 20px 20px 20px; */
+            
+            /* width: 70%; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: 'EB Garamond', serif;
+            /* min-height: 50px; */
+        }
+
+        .audify {
+            width: 100px;
+        }
+
+        .audify a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .audify-logo {
+            background-image: url(./assets/images/audify-gray.png);
+            background-repeat: no-repeat;
+            background-position-x: 5px;
+            background-position-y: 12px;
+            width: 60px;
+            height: 60px;
+            background-size: 80%;
+            transition: 0.3s;
+            
+        }
+
+        .audify a:hover .audify-logo {
+                background-image: url(./assets/images/audify-green.png);
+                transition: 0.3s;
+
+        }
+
+        .audify-title {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        .audify-description {
+            width: 80%;
+            text-align: center;
+        }
+
+        .dispersion {
+            width: 100px;
+        }
+
+        .dispersion a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dispersion-logo {
+            background-image: url(./assets/images/dispersion-gray.png);
+            background-repeat: no-repeat;
+            background-position-x: 5px;
+            background-position-y: 12px;
+            width: 60px;
+            height: 60px;
+            background-size: 80%;
+            transition: 0.3s;
+            
+        }
+
+        .dispersion a:hover .dispersion-logo {
+                background-image: url(./assets/images/dispersion.png);
+                transition: 0.3s;
+
+        }
+
+        .dispersion-title {
+            font-size: 22px;
+            margin-top: 20px;
+
+        }
+
+        .dispersion-description {
+            width: 80%;
+            text-align: center;
+        }
+
+        .codeup {
+            width: 100px;
+        }
+
+        .codeup a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .codeup-logo {
+            background-image: url(./assets/images/codeup-gray.png);
+            background-repeat: no-repeat;
+            background-position-x: -3px;
+            background-position-y: 7px;
+            /* background: red; */
+            width: 60px;
+            height: 60px;
+            background-size: 100%;
+            transition: 0.3s;
+            
+        }
+
+        .codeup a:hover .codeup-logo {
+                background-image: url(./assets/images/codeup.png);
+                transition: 0.3s;
+
+        }
+
+        .codeup-title {
+            font-size: 22px;
+            margin-top: 20px;
+
+        }
+
+        .codeup-description {
+            width: 80%;
+            text-align: center;
+        }
+
+        .links {
+            /* background: red; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* margin-top: 50px; */
+            
+            margin-bottom: 10px;
+
+        }
+
+        .empty {
+            /* height: 20px; */
+        }
+
+        .github {
+            background-image: url(./assets/images/github-gray.png);
+            background-size: 100%;
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            transition: 0.2s;
+        }
+
+        .github:hover {
+            background-image: url(./assets/images/github.png);
+            transition: 0.3s;
+
+        }
+
+        .linkedin {
+            background-image: url(./assets/images/linkedin-gray.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+
+        }
+
+        .linkedin:hover {
+            background-image: url(./assets/images/linkedin.png);
+            transition: 0.3s;
+
+        }
+
+        .mailto {
+            background-image: url(./assets/images/gmail-gray.png);
+            background-size: 100%;
+            height: 35px;
+            width: 35px;
+            margin: 10px;
+
+        }
+        .mailto:hover {
+            background-image: url(./assets/images/gmail.png);
+            transition: 0.3s;
+
+        }
+
+        .resume {
+            background-image: url(./assets/images/resume-gray.png);
+            background-position-x: -2px;
+            background-size: 100%;
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+
+        }
+        .resume:hover {
+            background-image: url(./assets/images/resume.png);
+            transition: 0.3s;
+
+        }
 }
